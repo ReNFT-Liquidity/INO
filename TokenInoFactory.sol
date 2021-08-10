@@ -134,7 +134,7 @@ contract TokenInoFactory is Ownable {
         emit LogCreateIno(pmAddr, _inoId, inoAddr, _tokenAddr, _nftAddr, nums[0], nums[1]);
     }
 
-    //项目方质押
+    //项目方质押Token
     function pmStakeInoToken(address _inoAddr, address _pmAddr, address _tokenAddr,
         uint256 _lAmount, uint256 _tAmount, uint256 _tokenPrice) internal {
         require(_tAmount > 0, "Cannot stake 0");
